@@ -1,0 +1,1854 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap'); */
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*  COLOR VARIABLES */
+:root{
+  --main-title-dark:  rgb(19, 19, 19);
+  --main-title-white:  rgb(238, 238, 238);
+  --main-hover-border: rgb(5, 191, 216);
+  --main-social-icon: rgb(255, 198, 77);
+  --main-hover-orange: rgba(248, 187, 116, 0.904);
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/*
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    font-size: 1.2rem;
+} */
+
+.navbar{
+    height: 80px;
+    /* width: 1600px; */
+    width: 100%;
+    background: rgba(184, 184, 184, 0.24);
+    /* background: rgba(71, 71, 71, 0.822); */
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar:hover{
+  background: rgba(71, 71, 71, 0.9);
+}
+
+
+nav .nav-menu ul.show{
+  left: 0;
+  transition: 0.8s ease-in-out;
+}
+
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+}
+
+.navbar .fa-house{
+  padding-right: 10px;
+}
+
+.navbar .fa-magnifying-glass{
+  padding-right: 10px;
+  /* font-weight: 300; */
+}
+
+.navbar .fa-circle{
+    font-size: 0.7rem;
+    padding: 0 15px;
+}
+
+.nav-menu{
+  padding: 0 20px;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+
+.nav-menu ul li{
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    transition: .4s ease-in-out;
+}
+
+.nav-menu ul li a{
+    transition: .3s ease-in-out;
+}
+
+.nav-menu ul li a:hover{
+  color: var(--main-hover-orange);
+}
+
+.nav-menu ul li:nth-child(5){
+  padding: 0 10px 0 20px;
+}
+
+.nav-menu ul li:nth-child(6){
+  padding: 0 30px 0 10px;
+}
+
+nav #icon {
+  color: rgb(255, 254, 254);
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+.logo{
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 0 0 0 150px;
+}
+
+.logo a{
+  transition: .3s ease-in-out;
+}
+
+.logo a:hover{
+  color: var(--main-hover-orange);
+}
+
+#header-text{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+    padding: 280px 0 0 150px ;
+    overflow: hidden;
+}
+
+.header-text h1{
+    font-size: 5rem;
+    color: var(--main-title-white);
+    line-height: 1.3;
+    font-weight: 500;
+    padding: 0 0 20px;
+}
+
+.header-text p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.9;
+    color: rgb(201, 201, 201);
+    padding: 0 0 20px;
+    letter-spacing: 2px;
+}
+.header-text p:nth-child(3){
+    position: relative;
+    top: 25px;
+    left: 45px;
+
+}
+
+.header-text p a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(201, 201, 201);
+    transition: .3s ease-in-out;
+}
+
+.header-text p a:hover{
+  color: var(--main-hover-orange);
+}
+
+.header-text .circle p{
+    border: solid 1px rgba(201, 201, 201, 0.644);
+    padding: 40px 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+}
+
+
+
+
+/* .overlay_sections {
+    position: absolute;
+    height: 100%;
+    width: 1600px;
+    background: rgba(0, 0, 0, 0.24);
+    z-index: 0;
+  } */
+
+
+  /* ---------------- SUBURBS -------------------- */
+  #suburbs{
+    height: 100vh;
+    /* padding-left: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sub-content{
+    /* background: rgb(255, 182, 182); */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding: 100px 0;
+  }
+
+  /* .sub-heading{
+      position: relative;
+      top: -100px;
+      display: flex;
+      flex-direction: column;
+  } */
+/*
+
+  .sub-left .sub-heading{
+    padding-top: 250px;
+  } */
+  .sub-heading{
+    padding-top: 150px;
+    padding-left: 150px;
+    width: 40%;
+  }
+
+  .sub-heading h1{
+    font-size: 4rem;
+  }
+
+  .arrows{
+
+  }
+
+  .arrows{
+    display: flex;
+    padding-top: 100px;
+  }
+
+   .arrows:hover{
+    cursor: pointer;
+  }
+
+  .sub-projects{
+    padding-top: 50px;
+  }
+
+  .suburbs .sub-left p{
+      font-size: 1.1rem;
+      font-weight: 600;
+  }
+
+
+   .arrows i:nth-child(1){
+    border: 1px rgb(94, 94, 94);
+    border-radius: 50%;
+    padding: 25px 30px;
+    color: rgb(112, 112, 112);
+    background: rgb(226, 226, 226);
+    margin: 0 5px 0 0;
+    transition: .3s ease-in-out;
+  }
+
+  .arrows i:nth-child(1):hover,
+  .arrows i:nth-child(2):hover{
+    background: var(--main-hover-orange);
+    border: 1px solid var(--main-hover-orange);
+  }
+
+  .arrows i:nth-child(2){
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 50%;
+    padding: 25px 30px;
+    color: rgb(160, 160, 160);
+    background: rgb(12, 12, 12);
+    transition: .3s ease-in-out;
+  }
+
+  .sub-heading p:nth-child(2){
+    border-bottom: solid 1px rgba(201, 201, 201, 0.644);
+    width: 225px;
+    font-size: 1.1rem;
+    padding: 20px 0;
+    /* border-radius: 50%;
+    position: relative;
+    top: -50px; */
+  }
+
+   .sub-circle{
+    border: solid 1px rgba(201, 201, 201, 0.644);
+    padding: 40px 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+  }
+
+  .sub-projects a{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+  }
+
+  .sub-projects p a{
+    position: relative;
+    top: 5px;
+    left: 40px;
+    transition: .3s ease-in-out;
+  }
+
+  .sub-projects p a:hover{
+    color: var(--main-hover-orange);
+  }
+
+
+  .sub-right{
+      /* width: 75%; */
+      /* background: rgb(193, 203, 255); */
+      display: flex;
+      padding: 0 100px;
+
+  }
+
+  .sub-right .sub-house-1 img,
+  .sub-right .sub-house-2 img,
+  .sub-right .sub-house-3 img{
+      display: flex;
+      width: 100%;
+      height: 575px;
+      object-fit: cover;
+      margin: 0px 0 60px;
+  }
+
+
+  .sub-house-1, .sub-house-2, .sub-house-3{
+      border-left: 2px solid rgba(201, 201, 201, 0.795);
+      height: 750px;
+      padding: 0 20px 0 20px;
+      width: 100%;
+  }
+
+
+
+  .suburbs .sub-left h1{
+    font-size: 4rem;
+    color: var(--main-title-dark);
+    line-height: 1.3;
+    font-weight: 500;
+    padding: 0 0 20px;
+  }
+
+
+
+  .suburbs h2{
+      font-size: 2rem;
+      margin: 0px 0 20px;
+  }
+
+  .suburbs p{
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 1.9;
+    color: rgb(121, 121, 121);
+    /* padding: 0 0 100px; */
+    letter-spacing: 2px;
+  }
+
+
+
+
+
+  /* ------------ FEATURED ----------- */
+
+  #featured{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    padding-left: 150px;
+    background: #000;
+
+  }
+
+
+  .featured-area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .featured-content{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .featured-content h1{
+    font-size: 3rem;
+    color: var(--main-title-white);
+    line-height: 1.3;
+    font-weight: 500;
+    padding-right: 100px;
+  }
+
+  .featured-content p{
+    color: #fff;
+  }
+
+  .featured-content p:nth-child(3){
+    padding-top: 20px;
+    line-height: 1.4;
+    color: rgba(201, 201, 201, 0.795);
+  }
+
+  .featured-content .line{
+    border-bottom: 1px solid rgba(143, 143, 143, 0.342);
+    width: 190px;
+    padding-top: 10px;
+  }
+
+  .featured-right{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .featured-right ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .featured-right ul li{
+    padding-right:50px;
+  }
+
+  .featured-right .feature-1,
+  .featured-right .feature-2,
+  .featured-right .feature-3,
+  .featured-right .feature-4{
+    padding-right: 50px;
+  }
+
+  .featured-right img{
+    width: 150px;
+  }
+
+
+    /* ------------ FEATURED END ----------- */
+
+
+
+
+
+
+
+
+
+  /************** WHAT IS CASA SECTION ****************/
+
+  #what-is-casa{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* padding-left: 150px; */
+    background: #fff;
+  }
+
+  .what-is-casa-section{
+    /* background: rgb(252, 202, 202); */
+    width: 100%;
+    /* height: 100%; */
+    padding: 100px 150px 50px;
+  }
+
+  .what-is-casa-left{
+    padding: 0px 225px 0 0;
+  }
+
+  .what-is-casa-content{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left-line{
+    border-left: 2px solid rgba(255, 211, 161, 0.281);
+    height: 650px;
+    /* padding: 0 20px 0 20px; */
+  }
+
+  .casa-title{
+    /* background: rgb(250, 220, 174); */
+    width: 25%;
+    padding: 0 40px 0 0;
+  }
+
+  .casa-title h1{
+    font-size: 4rem;
+    color: rgb(19, 19, 19);
+    line-height: 1.3;
+    font-weight: 600;
+    padding-left: 0;
+    padding: 0 0 20px;
+  }
+
+  .casa-title p:nth-child(3){
+    font-size: 1.25rem;
+    color: rgb(110, 110, 110);
+    line-height: 1.3;
+    font-weight: 500;
+    /* width: 320px; */
+    /* padding: 0 0 20px; */
+    /* letter-spacing: 2px; */
+  }
+
+  /* .section-1{
+    background: rgb(174, 250, 250);
+  }
+  .section-2{
+    background: rgb(174, 209, 250);
+  }
+  .section-3{
+    background: rgb(250, 174, 233);
+  } */
+
+  .sections{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    /* padding: 0 0 20px; */
+  }
+
+  .casa-section{
+    width: 25%;
+    padding: 20px 0px 0 40px;
+    line-height: 1.5;
+  }
+
+  .section-number{
+    font-size: 5rem;
+    color: rgba(255, 211, 161, 0.432);
+    letter-spacing: -7px;
+    position: relative;
+    transform: rotate(-90deg);
+    top: 30px;
+    right: 40px;
+    height: 0;
+  }
+
+  .section-number p{
+    transform: scale(1,1.3);
+  }
+
+  .casa-section h1{
+    font-size: 2.5rem;
+    padding: 0 0 5px;
+  }
+
+  .casa-section .casa-sub-title{
+    color:rgba(170, 170, 170, 0.699);
+    padding: 0 0 60px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .casa-section p:nth-child(3){
+    font-weight: 500;
+    color:rgb(105, 105, 105);
+    font-size: 1.1rem;
+  }
+
+
+  .casa-section .sub-projects p{
+    position: relative;
+    top: 100px;
+    font-weight: 500;
+    color: rgb(105, 105, 105);
+    font-size: 1.1rem;
+  }
+
+  .casa-section .sub-projects .sub-circle{
+    border: solid 1px rgba(255, 211, 161, 0.432);
+    padding: 40px 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+  }
+
+  .casa-section .sub-projects{
+    padding-top: 30px;
+  }
+
+
+  .casa-highlight{
+    width: 300px;
+    height: 60px;
+    background: rgba(255, 211, 161, 0.288);
+    position: relative;
+    left: -150px;
+    top: 71px;
+  }
+
+
+
+  /* ************ HOME PREVIEWS **************** */
+
+  #home-previews{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: rgba(230, 230, 230, 0.623);
+    margin-top: 40px;
+  }
+
+
+  .title{
+    font-size: 4rem;
+    color: rgb(26, 26, 26);
+    font-weight: 600;
+  }
+
+  .previews-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 150px 150px;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+
+  .previews-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  .previews-heading .casa-sub-title{
+    color:rgba(170, 170, 170, 0.699);
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .previews-heading .arrows {
+    padding: 30px 0;
+    transition: .3s ease-in-out;
+  }
+
+  .previews-heading .arrows i:nth-child(1){
+    border: 1px rgb(94, 94, 94);
+    border-radius: 50%;
+    padding: 25px 30px;
+    color: rgb(112, 112, 112);
+    background: rgb(226, 226, 226);
+    margin: 0 5px 0 0;
+    transition: .3s ease-in-out;
+  }
+
+  .previews-heading .arrows i:nth-child(1):hover,
+  .previews-heading .arrows i:nth-child(2):hover{
+    background: var(--main-hover-orange);
+    border: 1px solid var(--main-hover-orange);
+  }
+
+  .previews-heading .arrows i:nth-child(2){
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 50%;
+    padding: 25px 30px;
+    color: rgb(160, 160, 160);
+    background: rgb(12, 12, 12);
+    transition: .3s ease-in-out;
+  }
+
+  .previews h2{
+    font-size: 1.5rem;
+    color: rgb(26, 26, 26);
+    font-weight: 700;
+    padding: 20px 0 10px;
+  }
+
+  .previews p{
+    color: rgba(117, 117, 117, 0.795);
+    font-weight: 600;
+  }
+
+
+  .previews-homes{
+    /* background: rgb(255, 176, 176); */
+    width: 100%;
+    height: 90vh;
+    display: flex;
+  }
+
+
+  .previews-homes .home-1,
+  .previews-homes .home-2,
+  .previews-homes .home-3,
+  .previews-homes .home-4{
+    /* background: rgb(255, 240, 171); */
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  .previews-homes .home-1 img,
+  .previews-homes .home-2 img,
+  .previews-homes .home-3 img,
+  .previews-homes .home-4 img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .previews-section .sub-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .previews-section .sub-projects p{
+    position: relative;
+    left: 35px;
+  }
+
+  .previews-section .sub-projects p a{
+    color: rgba(99, 99, 99, 0.884);
+    font-weight: 600;
+    transition: .3s ease-in-out;
+  }
+
+  .previews-section .sub-projects p a:hover{
+    color: var(--main-hover-orange);
+  }
+
+  .previews-section .sub-projects .sub-circle{
+    border: solid 1px rgba(121, 121, 121, 0.432);
+    padding: 40px 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    left: -25px;
+    cursor: pointer;
+  }
+
+
+
+
+  /* ************ INTERIORS SECTIONS ************* */
+  #interiors{
+    height: 100vh;
+    width: 100%;
+    /* display: flex; */
+    margin-top: 40px;
+    /* background: rgba(153, 179, 250, 0.473); */
+  }
+
+  .half-circle{
+    background-color: rgba(219, 220, 236, 0.548);
+    position: relative;
+    top: 30%;
+    left: -60%;
+    /* transform: translate(-50%, -50%); */
+    transform: rotate(90deg);
+    height: 250px;
+    width: 450px;
+    border-radius: 225px 225px 0 0;
+    z-index: -1;
+  }
+
+  .interiors-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 150px 150px;
+  }
+
+  .interiors-heading{
+    width: 33%;
+    /* background: rgb(252, 195, 195); */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* padding-top: 100px; */
+  }
+
+  .interiors-heading h1{
+    font-size: 4rem;
+    color: rgb(19, 19, 19);
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  .interiors h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 15px 0;
+  }
+
+  .interiors p{
+    color: rgb(151, 151, 151);
+    font-weight: 500;
+  }
+
+  .interiors-images{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .interiors-images .interior-1{
+    /* background: rgb(255, 248, 206); */
+    width: 30%;
+  }
+  .interiors-images .interior-2{
+    /* background: rgb(185, 233, 255); */
+    width: 30%;
+    margin-top: 40px;
+  }
+  .interiors-images .interior-3{
+    /* background: rgb(253, 136, 247); */
+    width: 30%;
+    margin-top: 80px;
+  }
+
+
+   .interiors .interior-1 img,
+   .interiors .interior-2 img,
+   .interiors .interior-3 img{
+    width: 100%;
+    height: 525px;
+    object-fit: cover;
+  }
+
+
+  /* *********** FOOTER ************ */
+  #footer{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    /* padding-left: 150px; */
+    background: #000;
+  }
+
+  .footer-area{
+    width: 100%;
+    display: flex;
+    height: 80px;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    margin: 0 150px;
+    padding: 80px 0;
+  }
+
+  .footer-heading{
+    /* background: rgb(253, 183, 183); */
+    width: 100%;
+    /* margin: 0 150px; */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-heading h1{
+    font-size: 1.5rem;
+    color: var(--main-title-white);
+    line-height: 1.3;
+    font-weight: 500;
+    /* padding-right: 100px; */
+    width: 100%;
+  }
+
+  .foot-col p{
+    color: #fff;
+
+  }
+
+  .footer-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    /* margin: 0 150px; */
+  }
+
+
+  .social-icons{
+    padding: 60px 0 0 0;
+  }
+
+  .social-icons .fa-brands{
+    font-size: 1.5rem;
+    border: 1px solid var(--main-hover-border);
+    border-radius: 50%;
+    padding: 10px 15px;
+    transition: .3s ease-in-out;
+  }
+
+
+  .social-icons a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: .2s ease-in-out;
+  }
+
+  .social-icons a:hover{
+    color: var(--main-hover-border);
+  }
+
+
+
+  .foot-heading h1{
+    padding: 0 0 25px;
+  }
+
+  .foot-heading p{
+    padding: 10px 0 0;
+    font-size: 1rem;
+    color: rgba(201, 201, 201, 0.644);
+  }
+
+
+
+
+
+  #endcap{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    /* padding-left: 150px; */
+    background: var(--main-hover-border);
+  }
+
+
+
+  .show {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(87, 87, 87, 0.918);
+    top: 80px;
+    left: 0%;
+    text-align: center;
+    transition: all 0.5s;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: .4s ease-in-out;
+  }
+
+
+
+
+
+
+  /* ******* MEDIA QUERIES ************** */
+
+    /* *************************    1600px   ******************************** */
+
+  @media screen and (max-width: 1600px){
+
+    .what-is-casa-content {
+      flex-direction: column;
+      padding: 50px 0px 75px;
+    }
+
+    .casa-title{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      flex-direction: column;
+      padding-bottom: 80px;
+    }
+
+    .sections{
+      /* flex-direction: column; */
+      justify-content: center;
+      width: 100%;
+    }
+
+    .sections .section-1, .sections .section-2, .sections .section-3{
+      width: 100%;
+    }
+
+    .left-line{
+      height: 450px;
+    }
+
+
+    .casa-section p:nth-child(3){
+      font-size: .9rem;
+    }
+
+    .casa-section .sub-projects{
+      display: none;
+    }
+
+    #home-previews{
+      margin-top: 0;
+      padding-top: 0px;
+    }
+
+  }
+
+
+
+
+
+  /* *************************    1300px   ******************************** */
+
+  @media screen and (max-width: 1300px){
+    .sections{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .left-line{
+      display: none;
+    }
+
+    .what-is-casa-section{
+      padding: 40px 150px 80px;
+    }
+
+    .featured-content h1{
+      font-size: 2rem;
+      padding-right: 0px;
+    }
+
+    .featured-right img{
+      width: 115px;
+    }
+
+
+    .casa-title{
+      padding-bottom: 20px;
+    }
+
+    .casa-section .casa-sub-title {
+      padding: 0 0 30px;
+    }
+
+    .casa-highlight{
+      display: none;
+    }
+
+    .section-number{
+      top: -195px;
+      right: -275px;
+      transform: none;
+      font-size: 4rem;
+    }
+
+    #suburbs{
+      flex-direction: column;
+    }
+
+    .sub-heading{
+      width: 35%;
+    }
+
+    .sub-heading h1{
+      font-size: 3rem;
+    }
+
+    .sub-heading p:nth-child(2){
+      font-size: .9rem;
+      width: 195px;
+    }
+
+    .suburbs p{
+
+    }
+
+    .sub-right{
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    .sub-house-1,
+    .sub-house-2,
+    .sub-house-3{
+      height: unset;
+      border-left: unset;
+    }
+
+    .sub-right .sub-house-1 img,
+    .sub-right .sub-house-2 img,
+    .sub-right .sub-house-3 img{
+      width: 315px;
+      height: unset;
+      margin: 25px 0 25px;
+    }
+
+    .suburbs h2{
+      margin: 0 0 10px;
+    }
+
+  }
+
+
+
+    /* *************************    1100px   ******************************** */
+
+  @media screen and (max-width: 1110px){
+    .section-number p{
+      transform: scale(1, 1.0);
+    }
+
+    .section-number{
+      top: -200px;
+    }
+
+    .casa-section{
+      padding: 20px 0 0 0;
+    }
+
+    .casa-title h1{
+      font-size: 3rem;
+    }
+
+    .casa-highlight{
+      width: 210px;
+      top: 60px;
+      left: -90px;
+    }
+
+    .casa-section h1{
+      font-size: 2rem;
+    }
+
+    .casa-section .casa-sub-title{
+      padding: 0 0 35px;
+    }
+
+    .what-is-casa-content .casa-title p:nth-child(4){
+      text-align: center;
+    }
+
+    .featured-right img{
+      width: 90px;
+    }
+
+    .featured-right .feature-1,
+    .featured-right .feature-2,
+    .featured-right .feature-3,
+    .featured-right .feature-4{
+      padding-right: 20px;
+    }
+
+    .sub-content{
+      padding: 50px 0 50px;
+    }
+
+    .sub-heading h1{
+      font-size: 2.5rem;
+    }
+
+    .sub-heading p:nth-child(2){
+      font-size: .7rem;
+    }
+
+    .sub-right{
+      padding: 0 100px;
+    }
+
+    .sub-right .sub-house-1 img,
+    .sub-right .sub-house-2 img,
+    .sub-right .sub-house-3 img{
+      width: 250px;
+    }
+
+    .suburbs h2{
+      font-size: 1.5rem;
+    }
+
+    .half-circle{
+      display: none;
+    }
+
+    #interiors{
+      margin-top: 20px;
+    }
+
+    .interiors-section{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .interiors-heading{
+      padding: 0 0 30px;
+      width: unset;
+    }
+
+    .interiors-heading h1{
+      text-align: center;
+    }
+
+    .interiors p{
+      text-align: center;
+    }
+
+  }
+
+
+
+
+    /* *************************    975px   ******************************** */
+
+  @media screen and (max-width: 975px) {
+    .logo{
+      padding-left: 30px;
+    }
+
+    nav #icon {
+      display: block;
+    }
+
+    .navbar a{
+      text-decoration: none;
+      color: rgb(32, 32, 32);
+      text-transform: uppercase;
+  }
+
+    nav .nav-menu ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      /* background: rgba(104, 104, 104, 0.918); */
+      background: rgba(255, 255, 255, 0.952);
+      top: 80px;
+      left: -400%;
+      /* text-align: center; */
+      transition: .1s ease-in-out;
+    }
+
+    .fa-solid{
+      display: none;
+    }
+
+    /* MENU POP UP */
+
+
+    nav .nav-menu ul li{
+      font-size: 2.5rem;
+      margin: 20px 0;
+    }
+
+    .nav-menu ul li:nth-child(5){
+      padding: 0px 20px;
+    }
+
+
+
+    #header-text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 50px;
+      padding-top: 0;
+      text-align: center;
+    }
+
+    .header-text h1{
+      font-size: 4rem;
+      padding-right: 50px;
+    }
+
+    .header-text p{
+      padding-right: 50px;
+    }
+
+    .circle{
+      display: none;
+    }
+
+    .header-text p:nth-child(3){
+      display: none;
+    }
+
+    .section-number{
+      font-size: 3.5rem;
+      top: -210px;
+    }
+
+    .featured-right{
+      flex-direction: column;
+    }
+
+    .featured-right .feature-1,
+    .featured-right .feature-2,
+    .featured-right .feature-3,
+    .featured-right .feature-4{
+      padding-bottom: 20px;
+    }
+
+    .title{
+      font-size: 3rem;
+    }
+
+
+
+    #footer{
+      height: 110vh;
+    }
+
+    .footer-area{
+      padding: 40px 0;
+    }
+
+    .footer-heading{
+     flex-direction: column;
+     align-items: center;
+     width: 30%;
+    }
+
+    .foot-heading{
+      width: 400px;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  }
+
+
+
+
+
+
+
+  /* *************************    775px   ******************************** */
+
+  @media screen and (max-width: 775px){
+
+    .sub-heading{
+      padding-left: 30px;
+    }
+
+
+    .sub-heading p:nth-child(2){
+      display: none;
+    }
+
+    #featured{
+      flex-direction: column;
+      padding-left: unset;
+      height: 60vh;
+      padding: 40px 0;
+    }
+
+    .featured-area{
+      flex-direction: column;
+    }
+
+    .featured-content{
+      width: unset;
+      align-items: center;
+    }
+
+
+    .featured-content p:nth-child(3){
+      display: none;
+    }
+
+    .featured-right{
+      padding: 30px 0;
+    }
+
+    .featured-right img{
+      width: 125px;
+    }
+
+    /* .featured-content{
+      width: 50%;
+    } */
+
+    .sub-right{
+      padding: 0 40px;
+    }
+
+
+    .footer-area{
+      margin: 0;
+    }
+
+
+    .casa-title h1{
+      font-size: 2rem;
+    }
+
+    .casa-highlight {
+      height: 50px;
+       top: 45px;
+       left: -95px;
+    }
+
+    .casa-section h1{
+      font-size: 1.5rem;
+    }
+
+    .casa-section .casa-sub-title{
+      font-size: 1rem;
+      padding: 0 0 20px;
+    }
+
+    .what-is-casa-content .casa-title p:nth-child(4){
+      font-size: .8rem;
+    }
+
+    .section-number{
+      display: none;
+    }
+
+    .previews-section{
+      padding: 150px 80px;
+      /* width: unset; */
+    }
+
+    .title{
+      font-size: 2rem;
+    }
+
+    .previews-heading .casa-sub-title{
+      font-size: 1rem;
+    }
+
+    .previews-section .sub-projects{
+      display: none;
+    }
+
+    .previews-homes{
+      flex-direction: column;
+      /* align-items: center; */
+    }
+
+    .previews h2{
+      display: inline-block;
+      font-size: 1.2rem;
+      padding: 0 0 15px;
+    }
+
+    .previews p{
+      display: inline-block;
+      font-size: .9rem;
+    }
+
+    .previews-homes .home-1,
+    .previews-homes .home-2,
+    .previews-homes .home-3,
+    .previews-homes .home-4{
+      width: unset;
+    }
+
+    .previews-homes .home-1 img,
+    .previews-homes .home-2 img,
+    .previews-homes .home-3 img,
+    .previews-homes .home-4 img{
+      height: 150px;
+      /* object-fit: unset; */
+    }
+
+
+    .interiors-section{
+      width: unset;
+      padding: 150px 80px;
+    }
+
+    .interiors-images{
+      flex-direction: column;
+    }
+
+    .interiors .interior-1 img,
+    .interiors .interior-2 img,
+    .interiors .interior-3 img{
+      height: 150px;
+    }
+
+    .interiors-images .interior-1{
+      width: unset;
+      padding-bottom: 20px;
+    }
+
+    .interiors-images .interior-2,
+    .interiors-images .interior-3{
+      margin-top: unset;
+      width: unset;
+      padding-bottom: 20px;
+    }
+
+
+    .interiors h2{
+      display: inline-block;
+      font-size: 1.2rem;
+    }
+
+    .interiors p{
+      display: inline-block;
+      font-size: .9rem;
+    }
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* MOBILE */
+
+  @media screen and (max-width: 425px){
+    #navbar{
+      width: 100%;
+    }
+
+    #navbar .logo{
+      display: none;
+    }
+
+    .nav-menu ul li{
+      /* display: none; */
+    }
+
+    nav .nav-menu ul.show{
+      left: 0;
+      transition: .4s ease-in-out;
+    }
+/*
+    nav #icon {
+      color: rgb(252, 252, 252);
+      font-size: 30px;
+      line-height: 80px;
+      float: right;
+      margin-right: 40px;
+      cursor: pointer;
+    } */
+
+    #header{
+      width: 100%;
+    }
+
+    #suburbs{
+      width: 100%;
+      flex-direction: column;
+      padding: 0;
+      /* margin: 350px 0 600px; */
+      display: flex;
+      align-items: center;
+    }
+
+    .sub-content{
+      padding:0 !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 90%;
+    }
+
+
+    .sub-left{
+      width: 100%;
+      left: 25%;
+      top: 35px;
+    }
+
+    .sub-heading{
+      padding: 10px 0 0px !important;
+    }
+
+    .sub-left .sub-heading h1{
+      font-size: 3rem;
+    }
+
+    .sub-heading p:nth-child(2){
+      border-bottom: none;
+      position: relative;
+      left: -25px;
+      font-size: .9rem;
+    }
+
+     .arrows{
+      display: none;
+    }
+
+    .sub-projects{
+      padding-top: 25px;
+      position: relative;
+      left: -25px;
+    }
+
+    .sub-right{
+      width: unset;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: -25px;
+      /* padding: 0 30px; */
+    }
+
+    .sub-house-1,
+    .sub-house-2,
+    .sub-house-3{
+      height: 200px;
+      border-left: none;
+    }
+
+    .sub-right .sub-house-1 img,
+    .sub-right .sub-house-2 img,
+    .sub-right .sub-house-3 img{
+      /* height: 350px; */
+      width: 200px;
+      margin: 0;
+    }
+
+    .suburbs h2{
+      font-size: 1.2rem;
+      margin: 0;
+      padding-top: 10px;
+    }
+
+    .suburbs p:nth-child(3){
+      display: none;
+    }
+
+
+
+
+     /* ---------- SUBURBS ---------- */
+
+    #featured{
+      height: 65vh;
+      padding: 0 30px;
+      justify-content: center;
+    }
+
+    .featured-area{
+      flex-direction: column;
+    }
+
+    .featured-content{
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    .featured-content h1{
+      padding: 0;
+    }
+
+    .featured-right{
+      flex-direction: column;
+    }
+
+    .featured-right .feature-1{
+      padding-bottom: 00px;
+    }
+
+    .featured-right .feature-4{
+      padding-top: 20px;
+    }
+
+
+
+
+
+     /* ---------- WHAT IS CASA ---------- */
+
+    #what-is-casa{
+      height: unset;
+    }
+
+    .what-is-casa-section{
+      padding: 0 20px;
+    }
+
+    .casa-title{
+      padding: 0;
+    }
+
+    .what-is-casa-content .casa-title p:nth-child(4){
+      font-size: .9rem;
+      line-height: 1.5;
+    }
+
+    .sections{
+      text-align: center;
+    }
+
+
+    .half-circle{
+      display: none;
+    }
+
+
+
+
+     /* ---------- PREVIEWS ---------- */
+
+    .previews-section{
+      /* padding: unset; */
+      padding: 150px 0px;
+    }
+
+    .title{
+      /* font-size: 2rem; */
+    }
+
+    .previews-homes{
+      /* flex-direction: column; */
+      /* align-items: center; */
+      /* padding-top: 20px; */
+      padding: 0px 95px;
+    }
+
+    .previews-heading .casa-sub-title{
+      /* font-size: 1rem; */
+    }
+
+    .previews-homes .home-1,
+    .previews-homes .home-2,
+    .previews-homes .home-3,
+    .previews-homes .home-4{
+      /* width: 80%; */
+      /* padding: 5px 20px; */
+    }
+
+    .previews-homes .home-1 img,
+    .previews-homes .home-2 img,
+    .previews-homes .home-3 img,
+    .previews-homes .home-4 img{
+      height: 125px;
+    }
+
+    .previews h2{
+      /* padding: 0 0 20px; */
+      /* font-size: 1.2rem; */
+      /* display: inline-block; */
+    }
+
+    .previews p{
+      /* display: inline-block; */
+      /* font-size: .8rem; */
+      /* padding-left: 10px; */
+    }
+
+    .previews-section .sub-projects{
+        /* display: none; */
+    }
+
+
+
+
+     /* ---------- INTERIORS ---------- */
+
+    #interiors{
+      /* margin: 0;
+      height: 90vh; */
+    }
+
+    .interiors-section{
+      /* padding: 0 20px;
+      flex-direction: column; */
+      padding: 0px 95px;
+    }
+
+    .interiors-heading{
+      /* width: unset;
+      align-items: center;
+      padding-bottom: 30px; */
+    }
+
+    .interiors-heading h1{
+      /* font-size: 2rem; */
+    }
+
+    .interiors-images{
+      /* flex-direction: column; */
+      padding: 0px 5px;
+    }
+
+    .interiors .interior-1 img, .interiors .interior-2 img, .interiors .interior-3 img{
+      /* height: 130px; */
+      height: 125px;
+    }
+
+    .interiors-images{
+      /* align-items: center; */
+    }
+
+    .interiors-images .interior-1,
+    .interiors-images .interior-2,
+    .interiors-images .interior-3{
+      /* width: 80%;
+      padding: 5px 0px; */
+    }
+
+    .interiors-images .interior-2,
+    .interiors-images .interior-3{
+      /* margin: unset; */
+    }
+
+    .interiors h2{
+      /* font-size: 1.2rem;
+      display: inline-block;
+      padding: 0 0 20px; */
+    }
+
+    .interiors p{
+      /* font-size: .8rem;
+      display: inline-block;
+      padding-left: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      text-align: center;
+      padding-top: 10px */
+    }
+
+
+
+
+    /* ---------- FOOOTER---------- */
+
+    .foot-heading{
+      padding: 30px 20px;
+    }
+
+  }
